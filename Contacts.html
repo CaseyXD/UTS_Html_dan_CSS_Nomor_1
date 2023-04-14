@@ -1,0 +1,111 @@
+<html>
+<style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        .active a {
+            color: #ddd;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        .Kontak {
+            margin: 2em auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .Kontak h1 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+
+        .Kontak form {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .Kontak label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+
+        .Kontak input,
+        .Kontak textarea {
+            border-radius: 4px;
+            border: none;
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .cKontak input[type="submit"] {
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+
+        }
+
+        .Kontak input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+</style>
+<head>
+	<title>Contact Us</title>
+</head>
+<body>
+	
+	<main>
+		<section class="Kontak">
+			<h1>Contact Us</h1>
+			<form>
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name">
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" placeholder="Enter your email">
+				
+				<label for="message">Message</label>
+				<textarea id="message" name="message" placeholder="Enter your message"></textarea>
+				
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Krishna's Blog. All rights reserved.</p>
+	</footer>
+</body>
+</html>
